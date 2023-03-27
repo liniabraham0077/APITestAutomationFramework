@@ -2,6 +2,12 @@
 
 This framework is written using Cucumber BDD, Rest Assured in Java
 
+Tools Required for setting up the framework:
+Java IDE (Intellij/eclipse etc)
+Java
+Maven
+Maven dependencies for Cucumber, rest assured, open csv etc
+
 Test Strategy:
 
 BDD framework aimed at creating easy to implement feature files in **Gherkin** language for testing APIs

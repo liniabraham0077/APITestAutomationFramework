@@ -1,3 +1,5 @@
+/*  Step definition common for the framework */
+
 package steps;
 
 import io.cucumber.java.After;

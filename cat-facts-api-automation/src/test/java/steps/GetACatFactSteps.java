@@ -1,3 +1,5 @@
+/*  Step definition specific for get a cat fact feature */
+
 package steps;
 
 import io.cucumber.java.en.And;

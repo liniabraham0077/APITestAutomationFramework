@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 
 public class CSVManager {
 
+//    get the details of a specific id from the csv file
     public static HashMap<String, String> findCatFactRowFromCSV(String value, String fileName, String key1, String key2, String key3) throws Exception {
         HashMap<String, String> csvRowMap = new HashMap<String, String>();
         try {
@@ -37,6 +38,7 @@ public class CSVManager {
         return csvRowMap;
     }
 
+//    transform the json response with all values to a\List of hashmap with required keys only
     public static List<HashMap<String, String>> transformResponse(List<HashMap<String, String>> arr, String key1, String key2, String key3) {
 
         Set<String> keyNamesToInclude = Set.of(key1, key2, key3);
@@ -54,6 +56,7 @@ public class CSVManager {
         return copies;
     }
 
+//    Extract the values to be compared against json response from CSV file with required columns only
     public static ArrayList<HashMap<String, String>> getAllCSVRecords(String filePath, String key1, String key2, String key3) {
         ArrayList<HashMap<String, String>> myArrList = null;
         CSVReader reader;
@@ -85,6 +88,7 @@ public class CSVManager {
         return myArrList;
     }
 
+//    get the file from the class path
     private static File getFileFromResource(String fileName) throws URISyntaxException {
 
         ClassLoader classLoader = CSVManager.class.getClassLoader();
